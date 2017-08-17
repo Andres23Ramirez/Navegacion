@@ -2,6 +2,8 @@ package com.uniquindio.electiva_iii.navegacion;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,12 +12,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+
+        /**
+         * Muestra la ventana dos en pantalla
+         * @param view control que llamó al método
+         */
+
+    public void pasarAVentanaDos(View view) {
+        Log.v("MainActivity", "presioné el botón");
+    }
+
 }
 
-    /**
-     * Muestra la ventana dos en pantalla
-     * @param view control que llamó al método
-     */
-    public void pasarAVentanaDos(View view){
-        Log.v("MainActivity","presioné el botón");
-    }
