@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Navegacion</string>
+    <string name="app_name">Navegación</string>
+    <string name="txt_titulo">Ventana Uno</string>
+    <string name="cabecera_dos">Ventana Dos</string>
+    <string name="cabecera_tres">Ventana Tres</string>
+    <string name="btn_uno">Ir a ventana Dos</string>
+    <string name="btn_dos">Ir a ventana Tres</string>
 </resources>

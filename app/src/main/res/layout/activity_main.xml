@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.uniquindio.electiva_iii.navegacion.MainActivity">
+    tools:context="com.uniquindio.electiva_iii.navegacion.activity.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txt_titulo"
+        android:id="@+id/text_titulo"
+        android:textSize="22pt"
+        tools:layout_editor_absoluteY="79dp"
+        tools:layout_editor_absoluteX="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ir a Ventana Dos"
+        android:text="@string/btn_uno"
         android:id="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="141dp"
-        android:onClick="pasarAVentanaDos"/>
+        android:onClick="pasarAVentanaDos"
+        tools:layout_editor_absoluteY="196dp"
+        tools:layout_editor_absoluteX="130dp"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/text_titulo"
+        android:layout_centerHorizontal="true" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_dos"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="85dp"
+        android:onClick="pasarAVentanaTres"/>
+
+</RelativeLayout>
