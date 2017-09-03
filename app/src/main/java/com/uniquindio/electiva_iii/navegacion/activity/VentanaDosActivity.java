@@ -23,9 +23,11 @@ public class VentanaDosActivity extends AppCompatActivity {
         int entero = bundle.getInt("dato_entero");
         Log.i("Dato entero: ", ""+entero);
 
+        //Se​ ​ imprime​ ​ en​ ​ el​ ​ logcat​ ​ la cadena
         String cadena = bundle.getString("dato_string");
         Log.i("Dato String: ", ""+cadena);
 
+        //Se​ ​ imprime​ ​ en​ ​ el​ ​ logcat​ ​ el​ ​ parcelable
         Estudiante estudiante​ = bundle.getParcelable("dato_parcelable");
         Log.i("Estudinate: ", estudiante​.toString());
     }

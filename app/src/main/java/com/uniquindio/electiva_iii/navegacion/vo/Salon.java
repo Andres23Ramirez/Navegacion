@@ -13,23 +13,39 @@ import java.util.List;
 
 public class Salon implements Parcelable {
 
+    //Atributos de la clase salon
     private int numeroSalon;
     private int numeroSillas;
     private List<Estudiante> estudiante;
 
 
+    /**
+     * Metodto constructor
+     * @param numeroSalon
+     * @param numeroSillas
+     * @param estudiante
+     */
     public Salon(int numeroSalon, int numeroSillas, List<Estudiante> estudiante) {
         this.numeroSalon = numeroSalon;
         this.numeroSillas = numeroSillas;
         this.estudiante = estudiante;
     }
 
+    /**
+     * Metodo constructor
+     * @param numeroSalon
+     * @param numeroSillas
+     */
     public Salon(int numeroSalon, int numeroSillas) {
         this.numeroSalon = numeroSalon;
         this.numeroSillas = numeroSillas;
         this.estudiante = new ArrayList<> (  );
     }
 
+    /**
+     * Metodo constructor
+     * @param in
+     */
     protected Salon(Parcel in) {
         numeroSalon = in.readInt ();
         numeroSillas = in.readInt ();
